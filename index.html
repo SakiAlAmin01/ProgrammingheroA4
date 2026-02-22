@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Header -->
+<header class="bg-slate-800 text-white p-6 text-center">
+  <h1 class="text-2xl font-bold">Job Application Tracker</h1>
+</header>
+
+<!-- Dashboard -->
+<section class="max-w-6xl mx-auto p-6">
+  <div class="grid md:grid-cols-3 gap-4">
+    
+    <div class="bg-white p-5 rounded-lg shadow text-center">
+      <h3 class="text-gray-500">Total</h3>
+      <p id="totalCount" class="text-2xl font-bold">0</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-lg shadow text-center">
+      <h3 class="text-green-500">Interview</h3>
+      <p id="interviewCount" class="text-2xl font-bold">0</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-lg shadow text-center">
+      <h3 class="text-red-500">Rejected</h3>
+      <p id="rejectedCount" class="text-2xl font-bold">0</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Jobs Section -->
+<section class="max-w-6xl mx-auto p-6">
+
+  <!-- Title + Count -->
+  <div class="flex justify-between items-center">
+    <h2 class="text-xl font-semibold">Available Jobs</h2>
+    <span id="tabCount" class="text-gray-500">0 jobs</span>
+  </div>
+
+  <!-- Tabs -->
+  <div class="mt-4 flex gap-3">
+    <button data-tab="all" class="tabBtn bg-blue-600 text-white px-4 py-2 rounded">All</button>
+    <button data-tab="interview" class="tabBtn bg-gray-200 px-4 py-2 rounded">Interview</button>
+    <button data-tab="rejected" class="tabBtn bg-gray-200 px-4 py-2 rounded">Rejected</button>
+  </div>
+
+  <!-- Job Cards -->
+  <div id="jobContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
