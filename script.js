@@ -89,6 +89,13 @@ function renderJobs() {
   <h3 class="font-bold text-lg">${job.company}</h3>
   <p class="font-semibold text-gray-500">${job.position}</p>
   <p class="text-sm text-gray-500">${job.location} • ${job.type} • ${job.salary}</p>
+
+  <div class="mt-2">
+    <button class="statusBtn px-3 py-1 rounded text-sm border">
+      ${job.status === "all" ? "NOT APPLIED" : job.status.toUpperCase()}
+    </button>
+  </div>
+
   <p class="text-sm mt-2 text-gray-600">${job.description}</p>
 
   <div class="flex gap-2 mt-4">
