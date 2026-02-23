@@ -44,12 +44,19 @@
     <h2 class="text-xl font-semibold">Available Jobs</h2>
     <span id="tabCount" class="text-gray-500">0 jobs</span>
   </div>
-
- 
-
 </section>
 
+ <!-- Tabs -->
+ <div class="mt-4 flex gap-3 max-w-6xl mx-auto p-6">
+  <button data-tab="all" class="tabBtn bg-blue-600 text-white px-12 py-3 rounded">All</button>
+  <button data-tab="interview" class="tabBtn bg-gray-200 px-10 py-3 rounded">Interview</button>
+  <button data-tab="rejected" class="tabBtn bg-gray-200 px-10 py-3 rounded">Rejected</button>
+</div>
 
+  <!-- Job Cards -->
+  <div id="jobContainer" class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-6"></div>
+
+</section>
 <script src="script.js"></script>
 </body>
 </html>
