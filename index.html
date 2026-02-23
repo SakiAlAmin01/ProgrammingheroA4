@@ -19,18 +19,18 @@
   <div class="grid md:grid-cols-3 gap-4">
     
     <div class="bg-white p-5 rounded-lg shadow text-center">
-      <h3 class="text-gray-500">Total</h3>
+      <h3>Total</h3>
       <p id="totalCount" class="text-2xl font-bold">0</p>
     </div>
 
     <div class="bg-white p-5 rounded-lg shadow text-center">
-      <h3 class="text-green-500">Interview</h3>
-      <p id="interviewCount" class="text-2xl font-bold">0</p>
+      <h3>Interview</h3>
+      <p id="interviewCount" class="text-2xl font-bold text-green-500">0</p>
     </div>
 
     <div class="bg-white p-5 rounded-lg shadow text-center">
-      <h3 class="text-red-500">Rejected</h3>
-      <p id="rejectedCount" class="text-2xl font-bold">0</p>
+      <h3>Rejected</h3>
+      <p id="rejectedCount" class="text-2xl font-bold text-red-500">0</p>
     </div>
 
   </div>
@@ -47,14 +47,14 @@
 </section>
 
  <!-- Tabs -->
- <div class="mt-4 flex gap-3 max-w-6xl mx-auto p-6">
+ <div class="flex gap-3 max-w-6xl mx-auto pl-6">
   <button data-tab="all" class="tabBtn bg-blue-600 text-white px-12 py-3 rounded">All</button>
   <button data-tab="interview" class="tabBtn bg-gray-200 px-10 py-3 rounded">Interview</button>
   <button data-tab="rejected" class="tabBtn bg-gray-200 px-10 py-3 rounded">Rejected</button>
 </div>
 
   <!-- Job Cards -->
-  <div id="jobContainer" class="space-y-5 mt-6 max-w-6xl mx-auto p-6"></div>
+  <div id="jobContainer" class="space-y-5 max-w-6xl mx-auto p-6"></div>
 
 </section>
 <script src="script.js"></script>
